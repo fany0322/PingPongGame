@@ -1,0 +1,25 @@
+body{
+    background-color: gray;
+}
+.void{
+    height:100vh;
+    width:100vw;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.over{
+    font-size: 580%;
+}
+.regame{
+    font-size: 200%;
+    background-color: rgb(16, 192, 63);
+    color:black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sc{
+    font-size: 150%;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Over</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 150px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Over</h1>
+    <p>Your Score: <span id="se">0</span></p>
+    <button onclick="restartGame()">Restart</button>
+
+    <script>
+      
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score');
+
+        if (score !== null) {
+    
+            document.getElementById("se").textContent = score;
+        }
+
+        function restartGame() {
+          
+            location.href = 'start.html';
+         
+        }
+    </script>
+</body>
+</html>
